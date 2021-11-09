@@ -6,6 +6,7 @@ target("QtJsonSerializer")
     add_headerfiles("src/*.h", "src/(typeconverters/*.h)", {prefixdir = "QtJsonSerializer"})
     add_includedirs("src/")
     add_files("src/**.cpp")
+    add_files("src/serializerbase.h", "src/jsonserializer.h", "src/cborserializer.h") -- these need to go through the MOC.
     add_defines(
         "QT_DEPRECATED_WARNINGS",
         "QT_ASCII_CAST_WARNINGS",
