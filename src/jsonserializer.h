@@ -1,8 +1,8 @@
 #ifndef QTJSONSERIALIZER_JSONSERIALIZER_H
 #define QTJSONSERIALIZER_JSONSERIALIZER_H
 
-#include "QtJsonSerializer/qtjsonserializer_global.h"
-#include "QtJsonSerializer/serializerbase.h"
+#include "qtjsonserializer_global.h"
+#include "serializerbase.h"
 
 #include <QtCore/qjsonobject.h>
 #include <QtCore/qjsonarray.h>

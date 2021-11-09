@@ -1,12 +1,12 @@
 #ifndef QTJSONSERIALIZER_SERIALIZERBASE_H
 #define QTJSONSERIALIZER_SERIALIZERBASE_H
 
-#include "QtJsonSerializer/qtjsonserializer_global.h"
-#include "QtJsonSerializer/exception.h"
-#include "QtJsonSerializer/typeconverter.h"
-#include "QtJsonSerializer/qtjsonserializer_helpertypes.h"
-#include "QtJsonSerializer/metawriters.h"
-#include "QtJsonSerializer/typeextractors.h"
+#include "qtjsonserializer_global.h"
+#include "exception.h"
+#include "typeconverter.h"
+#include "qtjsonserializer_helpertypes.h"
+#include "metawriters.h"
+#include "typeextractors.h"
 
 #include <tuple>
 #include <optional>

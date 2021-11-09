@@ -1,7 +1,7 @@
 #ifndef QTJSONSERIALIZER_METAWRITERS_H
 #define QTJSONSERIALIZER_METAWRITERS_H
 
-#include "QtJsonSerializer/qtjsonserializer_global.h"
+#include "qtjsonserializer_global.h"
 
 #include <QtCore/qmetatype.h>
 #include <QtCore/qvariant.h>

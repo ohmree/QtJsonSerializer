@@ -1,7 +1,7 @@
 #ifndef QTJSONSERIALIZER_TYPEEXTRACTORS_H
 #define QTJSONSERIALIZER_TYPEEXTRACTORS_H
 
-#include "QtJsonSerializer/typeconverter.h"
+#include "typeconverter.h"
 
 #include <optional>
 #include <tuple>

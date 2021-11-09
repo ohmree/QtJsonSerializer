@@ -1,8 +1,8 @@
 #ifndef QTJSONSERIALIZER_CBORSERIALIZER_H
 #define QTJSONSERIALIZER_CBORSERIALIZER_H
 
-#include "QtJsonSerializer/qtjsonserializer_global.h"
-#include "QtJsonSerializer/serializerbase.h"
+#include "qtjsonserializer_global.h"
+#include "serializerbase.h"
 
 namespace QtJsonSerializer {
 

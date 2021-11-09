@@ -1,7 +1,7 @@
 #ifndef QTJSONSERIALIZER_EXCEPTION_H
 #define QTJSONSERIALIZER_EXCEPTION_H
 
-#include "QtJsonSerializer/qtjsonserializer_global.h"
+#include "qtjsonserializer_global.h"
 #include <QtCore/qstring.h>
 #include <QtCore/qsharedpointer.h>
 #include <QtCore/qstack.h>

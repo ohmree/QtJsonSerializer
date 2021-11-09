@@ -1,7 +1,7 @@
 #ifndef QTJSONSERIALIZER_TYPECONVERTER_H
 #define QTJSONSERIALIZER_TYPECONVERTER_H
 
-#include "QtJsonSerializer/qtjsonserializer_global.h"
+#include "qtjsonserializer_global.h"
 
 #include <type_traits>
 #include <limits>

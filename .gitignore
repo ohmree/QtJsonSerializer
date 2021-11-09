@@ -71,3 +71,9 @@ Thumbs.db
 *.dll
 *.exe
 
+# Xmake
+# -----
+.xmake/
+build/
+/.cache/
+/compile_commands.json
