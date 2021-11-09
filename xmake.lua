@@ -4,7 +4,8 @@ package("qtjsonserializer")
     set_description("The qtjsonserializer package, brutally mutilated to build with xmake")
 
     add_urls("https://github.com/ohmree/QtJsonSerializer.git")
-    add_versions("4.0.3", "")
+    -- HACK: maybe??
+    add_versions("4.0.3", ".")
 
     on_install(function (package)
         local configs = {}
@@ -15,16 +16,16 @@ package("qtjsonserializer")
     end)
 
     on_test(function (package)
-        assert(package:has_cxxtypes("QtJsonSerializer::SerializerBase", {includes = "serializerbase.h"}))
+        assert(package:has_cxxtypes("QtJsonSerializer::SerializerBase", {includes = "QtJsonSerializer/serializerbase.h"}))
     end)
 package_end()
 
 target("QtJsonSerializer")
     add_rules("qt.shared")
     set_languages("cxx17")
-    add_headerfiles("src/**/*.h")
+    add_headerfiles("src/*.h", "src/(typeconverters/*.h)", {prefixdir = "QtJsonSerializer"})
     add_includedirs("src/")
-    add_files("src/**/*.cpp")
+    add_files("src/**.cpp")
     add_defines(
         "QT_DEPRECATED_WARNINGS",
         "QT_ASCII_CAST_WARNINGS",
