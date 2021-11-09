@@ -4,7 +4,7 @@ package("qtjsonserializer")
     set_description("The qtjsonserializer package, brutally mutilated to build with xmake")
 
     add_urls("https://github.com/ohmree/QtJsonSerializer.git")
-    add_versions("4.0.3", "TODO")
+    add_versions("4.0.3", "")
 
     on_install(function (package)
         local configs = {}
