@@ -1,5 +1,24 @@
 add_rules("mode.debug", "mode.release")
 
+package("qtjsonserializer")
+    set_description("The qtjsonserializer package, brutally mutilated to build with xmake")
+
+    add_urls("https://github.com/ohmree/QtJsonSerializer.git")
+    add_versions("4.0.3", "TODO")
+
+    on_install(function (package)
+        local configs = {}
+        if package:config("shared") then
+            configs.kind = "shared"
+        end
+        import("package.tools.xmake").install(package, configs)
+    end)
+
+    on_test(function (package)
+        assert(package:has_cxxtypes("QtJsonSerializer::SerializerBase", {includes = "serializerbase.h"}))
+    end)
+package_end()
+
 target("QtJsonSerializer")
     add_rules("qt.shared")
     set_languages("cxx17")
@@ -13,6 +32,7 @@ target("QtJsonSerializer")
         "QT_BUILD_JSONSERIALIZER_LIB"
     )
     add_frameworks("QtCore", "QtCorePrivate")
+target_end()
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
